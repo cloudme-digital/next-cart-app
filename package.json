@@ -1,0 +1,54 @@
+{
+  "name": "next-cart-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && cap sync",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json}\"",
+    "restart": "rm -rf .next node_modules out && rm package-lock.json && npm install && npm run format && npm run lint && npm run build"
+  },
+  "keywords": [
+    "ecommerce",
+    "shopping",
+    "store"
+  ],
+  "author": "Cloudme",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.11.8",
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2",
+    "@types/react": "^18.3.7",
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "11.5.4",
+    "graphql": "^16.9.0",
+    "lodash": "^4.17.21",
+    "next": "^14.2.11",
+    "nprogress": "^0.2.0",
+    "postcss": "^8.4.47",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
+    "tailwindcss": "^3.4.12",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/node": "22.5.5",
+    "@types/nprogress": "^0.2.3",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "eslint": "8.57.1",
+    "eslint-config-next": "^14.2.11",
+    "postcss-preset-env": "^10.0.3",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
